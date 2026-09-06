@@ -1,6 +1,0 @@
-interface:
-  display_name: "Improve Codebase Architecture"
-  short_description: "Review architecture and find deeper modules"
-
-policy:
-  allow_implicit_invocation: false
