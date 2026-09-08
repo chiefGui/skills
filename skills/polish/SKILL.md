@@ -11,12 +11,9 @@ description: Improve existing code through deletion, simplification, and extensi
 - Reduce complexity.
 - Apply OCP by default.
 
-## Relevant skills
+## Relevant Skills
 
 - Read and apply [$code](../code/SKILL.md).
-- When polishing UI, refer to [$ui](../ui/SKILL.md).
-- When polishing React code, refer to [$react](../react/SKILL.md).
-- When polishing layout, refer to [$layout](../layout/SKILL.md).
 
 ## Cleanup
 

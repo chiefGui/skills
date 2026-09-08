@@ -9,13 +9,6 @@ description: Implement requested behavior and verify the result. Use only when e
 - Preserve existing behavior outside the requested changes.
 - Read and apply [$code](../code/SKILL.md).
 
-## Relevant skills
-
-- Working on UI? Refer to [$ui](../ui/SKILL.md).
-- Working on React? Refer to [$react](../react/SKILL.md).
-- Working on layout? Refer to [$layout](../layout/SKILL.md).
-- For folder structure, refer to [$folder-structure](../folder-structure/SKILL.md).
-
 ## Before coding
 
 - Read the affected code, its callers, and relevant tests.

@@ -8,6 +8,13 @@ description: Code design practices.
 - Prefer the simplest design that satisfies known requirements.
 - Resolve competing principles in favor of correctness and understandability.
 
+## Relevant skills
+
+- Working on UI? Refer to [$ui](../ui/SKILL.md).
+- Working on React? Refer to [$react](../react/SKILL.md).
+- Working on layout? Refer to [$layout](../layout/SKILL.md).
+- For folder structure, refer to [$folder-structure](../folder-structure/SKILL.md).
+
 ## Design
 
 - Keep related logic and knowledge together.
