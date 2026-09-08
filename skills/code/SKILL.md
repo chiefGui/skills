@@ -5,7 +5,7 @@ description: Code design practices.
 
 # Code
 
-- Prefer the simplest design that satisfies known requirements.
+- Prefer clear ownership, explicit boundaries, and minimal coordination.
 - Resolve competing principles in favor of correctness and understandability.
 
 ## Relevant skills
@@ -19,15 +19,13 @@ description: Code design practices.
 
 - Keep related logic and knowledge together.
 - Keep dependencies explicit.
-- Prefer simple interfaces that hide substantial implementation complexity. (Deep Modules)
+- Hide substantial complexity behind small interfaces, even across multiple files. (Deep Modules)
 - Encapsulate decisions so callers do not need to understand or repeat them.
-- Avoid splitting modules when doing so exposes details or increases coordination.
+- Separate responsibilities; keep each boundary's internals together.
 - Prefer existing capabilities over parallel implementations.
-- Introduce abstractions when they simplify the current implementation
-  or isolate a concrete source of variation.
-- Allow similar code to remain separate when it represents different
-  rules or reasons to change.
-- Eliminate abstractions whose removal reduces complexity.
+- Enforce boundaries with abstractions, even with one implementation.
+- Keep similar code separate when its rules or reasons to change differ.
+- Remove pass-through abstractions that neither protect boundaries nor hide complexity.
 - Retain abstractions that prevent complexity from spreading into callers.
 - Minimize the knowledge and coordination required from callers.
 - Optimize for understandable code and localized changes.
@@ -37,11 +35,11 @@ description: Code design practices.
 - Prefer composition.
 - Accept replaceable dependencies.
 - Remove unnecessary coupling that blocks extension.
-- When adding a variant of an existing capability, prefer extending through its contract over adding concrete-type branches to consumers.
-- Introduce or adjust the contract when it represents a coherent capability; do not preserve an abstraction that no longer fits.
-- Keep core rules independent of integration details where those details would otherwise spread.
+- Add variants through contracts; avoid concrete-type branches in consumers.
+- Revise contracts when their responsibilities change.
+- Keep integration details out of core rules.
 - Centralize wiring when multiple implementations need selection.
-- Require every interface, factory, and layer to provide a concrete capability needed by the task.
+- Require interfaces, factories, and layers to enforce contracts, own policies, or isolate integrations.
 
 ## Implementation
 

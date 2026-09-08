@@ -6,7 +6,6 @@ description: Improve existing code through deletion, simplification, and extensi
 # Polish
 
 - Preserve intended behavior.
-- Stay within the requested scope.
 - Delete before adding.
 - Reduce complexity.
 - Apply OCP by default.
@@ -14,6 +13,12 @@ description: Improve existing code through deletion, simplification, and extensi
 ## Relevant Skills
 
 - Read and apply [$code](../code/SKILL.md).
+
+## Coverage
+
+- Review the entire requested scope against applicable skills.
+- Trace root causes through callers and dependencies.
+- Reassess after changes; continue until no concrete, justified improvements remain.
 
 ## Cleanup
 
