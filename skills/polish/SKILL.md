@@ -11,6 +11,13 @@ description: Improve existing code through deletion, simplification, and extensi
 - Reduce complexity.
 - Apply OCP by default.
 
+## Relevant skills
+
+- Read and apply [$code](../code/SKILL.md).
+- When polishing UI, refer to [$ui](../ui/SKILL.md).
+- When polishing React code, refer to [$react](../react/SKILL.md).
+- When polishing layout, refer to [$layout](../layout/SKILL.md).
+
 ## Cleanup
 
 - Remove dead code and unused dependencies.
@@ -19,28 +26,7 @@ description: Improve existing code through deletion, simplification, and extensi
 - Remove obsolete compatibility paths.
 - Fix root causes and remove their workarounds.
 - Remove checks duplicated by enforced contracts.
-- Remove commented-out code and stale comments.
-- Remove comments that restate the code.
-
-## Design
-
-- Hide implementation complexity behind small interfaces.
-- Keep related logic and knowledge together.
-- Keep dependencies explicit.
-- Eliminate abstractions whose removal reduces complexity.
-- Retain abstractions that prevent complexity from spreading into callers.
-- Minimize the knowledge and coordination required from callers.
-- Optimize for understandable code and localized changes.
-
-## Extensibility
-
-- Prefer composition.
-- Keep core logic independent of concrete integrations.
-- Accept replaceable dependencies.
-- Centralize implementation wiring.
-- Support new implementations through existing contracts without modifying consumers.
-- Remove unnecessary coupling that blocks extension.
-- Require every interface, factory, and layer to provide a concrete capability.
+- Remove inline comments.
 
 ## Tests
 
