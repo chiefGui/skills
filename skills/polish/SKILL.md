@@ -1,24 +1,22 @@
 ---
 name: polish
-description: Improve existing code through deletion, simplification, and extensibility.
+description: Enforce applicable skills and materially improve code through deletion, simplification, and refactoring.
 ---
 
 # Polish
 
-- Preserve intended behavior.
-- Delete before adding.
-- Reduce complexity.
-- Apply OCP by default.
+- Preserve required observable behavior; internal contracts and representations may change.
+- Prefer deletion and simplification over additional machinery.
 
 ## Relevant Skills
 
 - Read and apply [$code](../code/SKILL.md).
 
-## Coverage
+## Completion standard
 
-- Review the entire requested scope against applicable skills.
-- Trace root causes through callers and dependencies.
-- Reassess after changes; continue until no concrete, justified improvements remain.
+- Assess the entire requested scope against applicable skills; trace issues through callers and dependencies.
+- Fix every identified in-scope violation and material design issue.
+- Re-review the resulting code after changes. Continue until a full pass finds no remaining material issue; report blockers as unfinished work.
 
 ## Cleanup
 
@@ -28,12 +26,11 @@ description: Improve existing code through deletion, simplification, and extensi
 - Remove obsolete compatibility paths.
 - Fix root causes and remove their workarounds.
 - Remove checks duplicated by enforced contracts.
-- Remove inline comments.
+- Remove comments disallowed by $code; refactor the code when removing them exposes unclear design.
 
 ## Tests
 
-- Keep tests that catch real bugs.
-- Delete tests that check the same thing.
+- Remove redundant tests only when they add no distinct behavior or failure coverage.
 - Test what the code does, not how it does it.
 - Fix flaky tests.
 - Add a test only when it catches a meaningful bug existing tests would miss.
@@ -41,15 +38,11 @@ description: Improve existing code through deletion, simplification, and extensi
 
 ## Verification
 
-- Verify the behavior affected by the changes.
-- Use the smallest set of existing checks that covers that behavior.
+- Run the smallest set of checks that covers the affected behavior.
+- Verify that affected consumers use the replacement and superseded paths are removed; identify any blocked removal.
 
 ## Completion report
 
-- Describe in plain language, focusing on value.
-- Keep it brief.
-- Use two sections:
-  - Better: bullet list with benefits of the changes.
-  - Worse: bullet list with drawbacks of the changes. "None identified" when applicable.
+- State material improvements with concrete before-and-after evidence, or state that none were justified.
+- State verification results, breaking changes, migration requirements, and any blockers or material tradeoffs.
 - Omit file inventories, implementation walkthroughs, and design-pattern names.
-- Support claimed benefits with evidence.
