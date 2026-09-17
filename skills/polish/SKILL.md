@@ -10,7 +10,7 @@ description: Enforce applicable skills and materially improve code through delet
 
 ## Relevant Skills
 
-- Read and apply [$code](../code/SKILL.md).
+- Read and apply [$code](../code/SKILL.md) and [$tests](../tests/SKILL.md).
 
 ## Completion standard
 
@@ -27,14 +27,6 @@ description: Enforce applicable skills and materially improve code through delet
 - Fix root causes and remove their workarounds.
 - Remove checks duplicated by enforced contracts.
 - Remove comments disallowed by $code; refactor the code when removing them exposes unclear design.
-
-## Tests
-
-- Remove redundant tests only when they add no distinct behavior or failure coverage.
-- Test what the code does, not how it does it.
-- Fix flaky tests.
-- Add a test only when it catches a meaningful bug existing tests would miss.
-- Investigate failures; never delete tests just to make checks pass.
 
 ## Verification
 

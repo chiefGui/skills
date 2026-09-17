@@ -7,7 +7,7 @@ description: Implement requested behavior and verify the result. Use only when e
 
 - Implement the requested behavior.
 - Preserve existing behavior outside the requested changes.
-- Read and apply [$code](../code/SKILL.md).
+- Read and apply [$code](../code/SKILL.md) and [$tests](../tests/SKILL.md).
 
 ## Before coding
 
@@ -18,14 +18,6 @@ description: Implement requested behavior and verify the result. Use only when e
 - Resolve ambiguity that materially affects behavior or public contracts.
 - Choose a complete approach and determine how to verify it.
 - Keep planning proportional to the task; proceed when the approach is clear.
-
-## Tests
-
-- Test observable behavior and meaningful failure cases.
-- Use existing tests when they already cover the behavior.
-- Add tests for new behavior and meaningful coverage gaps.
-- Avoid tests coupled to internal structure or incidental call order.
-- Investigate failures; change existing expectations only when the requested behavior or evidence shows they are incorrect.
 
 ## Verification
 

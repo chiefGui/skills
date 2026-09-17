@@ -42,6 +42,7 @@ description: Code design practices.
 - Keep similar code separate when its rules or reasons to change differ.
 - Remove abstractions that neither protect boundaries nor hide complexity.
 - Minimize the knowledge and coordination required from callers.
+- Address hidden dependencies and mixed responsibilities exposed by difficult test setup before adding test-specific machinery.
 
 ## Extensibility
 
