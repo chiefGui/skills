@@ -1,6 +1,7 @@
 ---
 name: polish
 description: Enforce applicable skills and materially improve code through deletion, simplification, and refactoring.
+disable-model-invocation: true
 ---
 
 # Polish

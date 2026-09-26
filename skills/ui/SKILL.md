@@ -1,6 +1,7 @@
 ---
 name: ui
 description: UI practices.
+disable-model-invocation: true
 ---
 
 # UI

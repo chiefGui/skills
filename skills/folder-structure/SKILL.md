@@ -1,6 +1,7 @@
 ---
 name: folder-structure
 description: Folder structure practices.
+disable-model-invocation: true
 ---
 
 # Folder structure
