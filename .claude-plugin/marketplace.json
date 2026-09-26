@@ -1,0 +1,12 @@
+{
+  "name": "chiefgui",
+  "owner": { "name": "chiefGui" },
+  "metadata": { "description": "Engineering skills for code, tests, UI, docs, and workflow." },
+  "plugins": [
+    {
+      "name": "chiefgui",
+      "source": "./",
+      "description": "Engineering skills for code, tests, UI, docs, and workflow."
+    }
+  ]
+}
