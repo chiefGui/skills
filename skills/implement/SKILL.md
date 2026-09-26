@@ -1,6 +1,7 @@
 ---
 name: implement
 description: Implement requested behavior and verify the result. Use only when explicitly invoked, before and during implementation.
+disable-model-invocation: true
 ---
 
 # Implement

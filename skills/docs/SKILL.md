@@ -1,6 +1,7 @@
 ---
 name: docs
 description: Write and edit technical documentation that helps readers learn, act, find facts, or understand why. Use only when explicitly invoked.
+disable-model-invocation: true
 ---
 
 # Docs

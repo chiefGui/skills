@@ -1,6 +1,7 @@
 ---
 name: migration
 description: Use only when explicitly invoked to record or execute a project migration.
+disable-model-invocation: true
 ---
 
 # Migration

@@ -1,6 +1,7 @@
 ---
 name: react
 description: React architecture & best practices.
+disable-model-invocation: true
 ---
 
 # React

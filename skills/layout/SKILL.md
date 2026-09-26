@@ -1,6 +1,7 @@
 ---
 name: layout
 description: Layout practices.
+disable-model-invocation: true
 ---
 
 # Layout
